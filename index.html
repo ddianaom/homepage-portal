@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Planejamento</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/brasao-am.png" alt="Logo do Portal" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sistemas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquise aqui" />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Banner interativo (Carrossel) -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="carousel-item">
+                <img src="images/teatro.png" alt="Banner 1">
+                <div class="overlay">
+                    <h1>Teste 1</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/teatro.png" alt="Banner 2">
+                <div class="overlay">
+                    <h1>Teste 2</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/teatro.png" alt="Banner 3">
+                <div class="overlay">
+                    <h1>Teste 3</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Botões de navegação -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
