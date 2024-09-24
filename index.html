@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portal do Planejamento</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
 
+  <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="images/brasao-am.png" alt="Logo do Portal" />
+      <div class="logo">
+        <img src="images/brasao-am.png" />
+        <div class="header-text">
+          <p>Portal do Planejamento</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sistemas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="search-container">
-            <input type="text" placeholder="Pesquise aqui" />
-            <button><i class="fas fa-search"></i></button>
-        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li>Início</li>
+          <li>Sobre</li>
+          <li>Produtos</li>
+          <li>Sistemas</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" placeholder="Pesquise aqui" />
+      </div>
     </header>
 
     <!-- Banner interativo (Carrossel) -->
     <div class="carousel-container">
-        <div class="carousel-slide">
-            <div class="carousel-item">
-                <img src="images/teatro.png" alt="Banner 1">
-                <div class="overlay">
-                    <h1>Teste 1</h1>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/teatro.png" alt="Banner 2">
-                <div class="overlay">
-                    <h1>Teste 2</h1>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/teatro.png" alt="Banner 3">
-                <div class="overlay">
-                    <h1>Teste 3</h1>
-                </div>
-            </div>
+      <div class="carousel-slide">
+        <div class="carousel-item">
+          <img src="images/teatro.png" />
+          <div class="overlay">
+            <h1>Relatório - 2024</h1>
+          </div>
         </div>
-        <!-- Botões de navegação -->
-        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        <div class="carousel-item">
+          <img src="images/rio-amazonas.png" />
+          <div class="overlay">
+            <h1>Mapas do Amazonas</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/industria.png" />
+          <div class="overlay">
+            <h1>PIB Anual</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Botões de navegação -->
+      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlide(1)">&#10095;</a>
     </div>
 
+    <!-- Seção de Notícias -->
+    <section class="news-section">
+      <div class="news-container">
+        <div class="news-card">
+          <div class="image-container">
+            <img src="images/workshop.png" />
+          </div>
+          <div class="news-text">
+            <p>
+              Sedecti realiza Workshop de Planejamento da Fase III do Plano de
+              Bioeconomia do Amazonas
+            </p>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="image-container">
+            <img src="images/porto.png" />
+          </div>
+          <div class="news-text">
+            <p>
+              Portos provisórios começam a operar na próxima semana em
+              Itacoatiara
+            </p>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="image-container">
+            <img src="images/aprovacao.png" />
+          </div>
+          <div class="news-text">
+            <p>
+              Codam aprova R$ 596,2 milhões em investimento para o Polo
+              Industrial de Manaus
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="scripts/script.js"></script>
-</body>
+  </body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/brasao-am.png" alt="Logo do Portal" />
+      </div>
+      <div class="footer-text">
+        <p>Portal do Planejamento</p>
+      </div>
+    </div>
+  </footer>
 </html>
